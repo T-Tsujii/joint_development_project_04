@@ -1,0 +1,8 @@
+<h1><b>ユーザー 一覧</b></h1>
+<% @users.each do |user| %>
+  <p>
+    <%= user.name %>
+    <%= user.age %>
+    <%= link_to '詳細', user_path(user.id), method: :get%>
+  </p>
+<% end %>
