@@ -12,6 +12,17 @@ class MessagesController < ApplicationController
     @messages = Message.find(params[:id])
   end
 
+  #編集に対するアクション
+
+  def edit
+    @message = Message.find(params[:id])
+  end
+  #更新に対するアクション
+  def update
+    message = Message.find(params[:id])
+    message.update(message_params)
+  end
+
  #
   def create
     # Strong Parameter の記述
