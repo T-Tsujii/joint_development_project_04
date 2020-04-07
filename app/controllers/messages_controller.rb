@@ -7,8 +7,12 @@ class MessagesController < ApplicationController
   def new
    @message = Message.new
   end
+  #新規登録に対するアクション
+  def show
+    @messages = Message.find(params[:id])
+  end
 
- # 以下のアクションを追加
+ #
   def create
     # Strong Parameter の記述
     Message.create(message_params)
