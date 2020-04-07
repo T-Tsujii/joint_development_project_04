@@ -23,6 +23,12 @@ class MessagesController < ApplicationController
     message.update(message_params)
   end
 
+  #削除に対するアクション
+  def destroy
+    message = Message.find(params[:id])
+    message.delete
+  end
+
  #
   def create
     # Strong Parameter の記述
