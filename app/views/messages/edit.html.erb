@@ -1,0 +1,7 @@
+<%= form_for @message, url: message_path(@message.id), html: { method: :patch } do |f| %>
+  <h1>メッセージ 編集</h1>
+  <p>タイトル <%=f.text_field:title %></p>
+  <p>内容 <%=f.text_field:content %></p>
+  <input type="submit" value="送信">
+  <p><%= link_to "一覧画面へ",messages_path %></p>
+<% end %>
