@@ -1,4 +1,5 @@
 # 共同開発 基礎
+
 ​
 共同開発（基礎）へようこそ！
 ​
@@ -252,7 +253,8 @@ git pull
 - `form_for` を 現在推奨されている `form_with` に変更し，`url`, `method` を書かない記法に変更
   - [Qiitaの参考記事](https://qiita.com/hmmrjn/items/24f3b8eade206ace17e2)
   - `local: true` オプションのつけ忘れに注意
-​
+
+
 - ページ全体を中央寄せにし，横幅の最大値を設定
   - ページ全体に共通する部分を記載した `app/views/layouts/application.html.erb` を修正
   - 必要なスタイルを `app/assets/stylesheets/application.scss` に追加
